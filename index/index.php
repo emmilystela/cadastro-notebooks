@@ -46,19 +46,19 @@ if (isset($_GET['deletar'])) {
         <h1 class="p-3 mb-2 bg-dark text-white text-end">Cadastro de notebooks</h1>
         <div class="row g-2 px-5 mt-4">
         <h4 class="mt-3">Cadastrar:</h4>
-            <div class="mb-3 col-6">
+            <div id="modelo" class="mb-3 col-6">
                 <!-- <label>Modelo:</label> -->
                 <input class="form-control" type="text" name="modelo" placeholder="Modelo" value="<?= $modelo; ?>" required>
             </div>
-            <div class="mb-3 col-3">
+            <div id="marca" class="mb-3 col-3">
                 <!-- <label>Marca</label> -->
                 <input class="form-control" type="text" name="marca" placeholder="Marca" value="<?= $marca; ?>" required>
             </div>
-            <div class="mb-3 col-3">
+            <div id="valor" class="mb-3 col-3">
                 <!-- <label>Valor</label> -->
-                <input class="form-control" type="text" name="valor" placeholder="Valor" value="<?= $valor; ?>" required>
+                <input class="form-control" type="text" name="valor" placeholder="Valor" value="<?= $valor; ?>"  required>
             </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div id="salvar" class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button class="btn btn-dark" type="submit" name="salvar">Salvar</button>
             </div>
         </div>
